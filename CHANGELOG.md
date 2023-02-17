@@ -9,3 +9,6 @@
 ### 0.0.3 (17.2.2023.)
 - Fixed CHANELOG.md missing in packaged file
 - Remove unnecessary files
+
+### 0.0.4 (17.2.2023.)
+- Fixed unnecessary install_requires

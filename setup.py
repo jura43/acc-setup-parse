@@ -10,7 +10,7 @@ classifiers = [
 
 setup(
     name="accsetupparse",
-    version="0.0.3",
+    version="0.0.4",
     description="Library for converting and storing ACC json setups into Python class",
     url="https://github.com/jura43/acc-setup-parse",
     long_description=open("README.md").read() + '\n\n' + open('CHANGELOG.md').read(),
@@ -19,5 +19,8 @@ setup(
     packages=find_packages(exclude=["main.py", ".gitignore", ".git", "test.json", "Untitled-1.txt"]),
     keywords='parser',
     license="GPLv3",
-    install_requires=['json']
+    project_urls = {
+      'Home': 'https://github.com/jura43/acc-setup-parse',
+      'Changelog': 'https://github.com/jura43/acc-setup-parse/blob/master/README.md'
+}
 )

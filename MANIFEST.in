@@ -1,2 +1,2 @@
 global-include *.md *.py
-global-exclude test.json Untitled-1.txt
+global-exclude test.json Untitled-1.txt main.py
