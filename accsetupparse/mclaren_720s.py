@@ -15,6 +15,10 @@
 import json
 
 class McLaren720S:
+    """
+    Class for converting and storing McLaren 720S GT3 setup from json file
+    Use McLaren720S("<path to setup file>")
+    """
     def __init__(self, setup):
         #Loading setup from json file
         self.s = open(setup) 
@@ -94,7 +98,7 @@ class McLaren720S:
 
     def _getTyreCaster(self): #Function returns list of real caster values
         casterValues = [5.3, 5.6, 5.8, 6.0, 6.3, 6.5, 6.8, 7.0, 7.3, 7.5, 7.8, 8.0] #Possible vaules in-game
-        caster = [] #3 2 2 3 2 3 2 3 2 3 2
+        caster = []
         caster.append(casterValues[self.data['basicSetup']['alignment']['casterLF']])
         caster.append(casterValues[self.data['basicSetup']['alignment']['casterRF']])
 
