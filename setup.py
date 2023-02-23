@@ -10,7 +10,7 @@ classifiers = [
 
 setup(
     name="accsetupparse",
-    version="0.0.4",
+    version="0.0.5",
     description="Library for converting and storing ACC json setups into Python class",
     url="https://github.com/jura43/acc-setup-parse",
     long_description=open("README.md").read() + '\n\n' + open('CHANGELOG.md').read(),
