@@ -16,3 +16,6 @@
 ### 0.0.5 (23.2.2023.)
 - Class now accepts python list with setup values, hence no longer logic for loading file into memory
 - Added carTitle property which holds car name ment for displaying in UI
+
+### 0.0.6 (24.2.2023.)
+- Fixed not passing setup to class method for converting values

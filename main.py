@@ -1,2 +1,10 @@
 from accsetupparse import McLaren720S
-print(McLaren720S("test.json").preload)
+import json
+
+f = open("test.json")
+data = json.load(f)
+f.close()
+
+car = McLaren720S(data)
+
+print(car.carTitle)
