@@ -29,7 +29,8 @@ class McLaren720S:
         self.tyreCamber = self._getTyreCamber(setup)
         self.tyreCaster = self._getTyreCaster(setup)
         #Electronics
-        self.tc = setup['basicSetup']['electronics']['tC1']
+        self.tc1 = setup['basicSetup']['electronics']['tC1']
+        self.tc2 = None
         self.abs = setup['basicSetup']['electronics']['abs']
         self.ecu = setup['basicSetup']['electronics']['eCUMap'] + 1
         #Strategy
@@ -45,6 +46,7 @@ class McLaren720S:
         self.bumpStopRange = setup['advancedSetup']['mechanicalBalance']['bumpStopWindow']
         self.brakePower = setup['advancedSetup']['mechanicalBalance']['brakeTorque'] + 80
         self.brakeBias = self._getBrakeBias(setup)
+        self.steeringRatio = self._getSteeringRatio(setup)
         self.preload = 20 + setup['advancedSetup']['drivetrain']['preload'] * 10
         #Dampers
         self.bumpSlow = setup['advancedSetup']['dampers']['bumpSlow']
@@ -118,6 +120,9 @@ class McLaren720S:
     
     def _getBrakeBias(self, setup): #Returns real brake bias value in %
         return (47.0 + setup['advancedSetup']['mechanicalBalance']['brakeBias'] * 0.2)
+    
+    def _getSteeringRatio(self, setup): #Returns ingame value for steering ratio
+        return ( 11 + setup['basicSetup']['alignment']['steerRatio'])
     
     def _getRideHeight(self, setup): #Returns list of real ride height values [front, rear]
         height = []

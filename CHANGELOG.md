@@ -19,3 +19,6 @@
 
 ### 0.0.6 (24.2.2023.)
 - Fixed not passing setup to class method for converting values
+
+### 0.0.7 (24.2.2023.)
+- Added tc2 and steering ratio property

@@ -7,4 +7,4 @@ f.close()
 
 car = McLaren720S(data)
 
-print(car.carTitle)
+print(car.steeringRatio)
